@@ -1,0 +1,9 @@
+server:
+  port: ${APP_PORT:60080}
+  address: ${APP_ADDR:0.0.0.0}
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://platform:platform@192.168.1.100:27017/ai-platform
+      authentication-database: ai-platform

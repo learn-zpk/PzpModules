@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-config-map
+data:
+  app.env: prod
+  app.port: "60080"
+  app.addr: "0.0.0.0"
+  mongo.username: platform
+  mongo.password: platform
+  mongo.database: ai-platform
+  mongo.authenticationdb: ai-platform
+  mongo.port: "57017"
+  mongo.host: "192.168.100.20"

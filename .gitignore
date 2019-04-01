@@ -105,3 +105,6 @@ venv.bak/
 .idea/
 work_task/
 todo_plan/
+
+*.iml
+*/target/

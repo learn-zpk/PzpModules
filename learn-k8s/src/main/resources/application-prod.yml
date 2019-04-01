@@ -1,0 +1,9 @@
+server:
+  port: ${APP_PORT:8080}
+  address: ${APP_ADDR:0.0.0.0}
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOST}:${MONGO_PORT}/${MONGO_DATABASE}
+      authentication-database: ${MONGO_AUTH_DATABASE}

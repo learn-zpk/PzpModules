@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata: #元数据
+  name: hello-src #service名称
+  labels: #自定义标签属性列表
+    k8s-learn/name: hello-src
+  annotations: #自定义注释列表
+    name: string
+spec:
+  type: NodePort #类型: 使用宿主机的端口,可通过外部地址访问
+  selector:  #指定Label标签的Pod作为管理范围
+    k8s-learn/pod: hello-pod
+  ports: # 暴露的端口列表
+    - name: http #端口名称
+      port: 60080 # 服务之间访问的端口
+      nodePort: 30080 # type为nodePort时，指定物理机映射的端口号，有范围限制
+      targetPort: 60080 #转发到后端Pod的端口号
+      protocol: TCP #端口协议

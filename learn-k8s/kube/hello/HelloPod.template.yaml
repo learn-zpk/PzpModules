@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata: #元数据
+  name: hello-pod # pod名
+  labels: #自定义标签属性列表
+    k8s-learn/pod: hello-pod
+spec:
+  restartPolicy: OnFailure #[Always | Never | OnFailure] Pod的重启策略，Always表示一旦不管以何种方式终止运行，kubelet都将重启，OnFailure表示只有Pod以非0退出码退出才重启，Nerver表示不再重启该Pod
+  #nodeSelector: 根据label条件匹配分配节点
+  nodeName: docker-desktop #指定pod调度的节点
+  containers: # 容器列表
+    - name: hello #容器名
+      image: $image_url # 镜像名,使用占位符,通过shell替换,learn-k8s:20190324_153109
+      ports:
+        - name: hello
+          containerPort: 60080
+          protocol: TCP
+      imagePullPolicy: Always #[Always | Never | IfNotPresent] 获取镜像的策略 Alawys表示下载镜像 IfnotPresent表示优先使用本地镜像，否则下载镜像，Nerver表示仅使用本地镜像
+      # command: [string]     　　#容器的启动命令列表，如不指定，使用打包时使用的启动命令
+      # args: [string]      　　 #容器的启动命令参数列表
+      # workingDir: string      #容器的工作目录
+      env:
+        - name: APP_ENV
+          value: prod
