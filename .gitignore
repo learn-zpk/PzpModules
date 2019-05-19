@@ -103,8 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 .idea/
-work_task/
-todo_plan/
 
 *.iml
 */target/
+*/todo.md
