@@ -8,7 +8,7 @@ import java.util.Map;
  * @date 2019/05/20
  * @description
  */
-public class SolutionTwoSum001 {
+public class Solution0001TwoSum {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap(16);
@@ -28,7 +28,7 @@ public class SolutionTwoSum001 {
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 22;
-        int[] result = new SolutionTwoSum001().twoSum(nums, target);
+        int[] result = new JavaVersion.Solution0001TwoSum().twoSum(nums, target);
         System.out.println("" + result[0] + "" + result[1]);
     }
 }
