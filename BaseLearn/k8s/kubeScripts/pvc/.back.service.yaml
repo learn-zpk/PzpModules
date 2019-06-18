@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: back-pm2
+  labels:
+    bdmd.com/service: back-pm2
+spec:
+  #clusterIP:
+  type: NodePort
+  selector:
+    bdmd.com/service: back-pm2
+  ports:
+    - name: back-pm2
+      port: 8080
+      nodePort: 32084
+      targetPort: back-pm2
+      protocol: TCP
