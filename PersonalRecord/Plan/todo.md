@@ -40,4 +40,14 @@
 
 ## 生活
 - 学车，9月之前完成
-- 求婚
+
+vue 路由保留、组件保留 keep-alive
+Java\Python\Javascript\Lua\Shell
+Mysql\MongoDb\Redis
+Spring\SpringBoot\SpringCloud
+Rabbitmq\Kafka\Zookeeper\Netty
+Vue\
+Kubernetes\Docker\Nginx
+Ubuntu\Centos
+Markdown\Latex
+ML\Pytorch
