@@ -1,13 +1,11 @@
-# 软著&专利等数据
-- 专利:  python patent.py 
-- 软著: python copyright.py 
+# 软著&专利
 
 - argparse参数:
-  - --company-id: 公司id
-  - --company-name: 公司名称
-
+  - --id: 公司id
+  - --name: 公司名称
+  - --type: 软著或专利
 - 例子:
 ```
-python copyright.py --company-id xxx --company-name xxx
-  python patent.py --company-id xxx --company-name xxx
+python tianyancha.py --type 软著 --company-id xxx --company-name xxx
 ```
+- 可使用pyinstaller安装成exe文件
