@@ -1,5 +1,6 @@
 import argparse
 import random
+
 import browsercookie
 import openpyxl
 import requests
@@ -21,7 +22,7 @@ def param_extract_interactive():
     name = input("请输入公司名称:").strip()
     if not name:
         raise Exception("公司名称不可为空")
-    print(id,typo,name)
+    print(id, typo, name)
     return typo, id, name
 
 
