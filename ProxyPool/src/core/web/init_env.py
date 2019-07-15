@@ -19,6 +19,3 @@ def init(app):
     蓝图注册
     """
     blueprint_registry.register(app)
-
-
-

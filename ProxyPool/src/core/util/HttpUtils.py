@@ -1,9 +1,9 @@
 # noinspection PyPep8Naming
 import random
-import time
 
 import chardet
 import requests
+import time
 from lxml import etree
 
 

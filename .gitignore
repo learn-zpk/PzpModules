@@ -100,8 +100,14 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-.idea/
 
-*.iml
 */target/
-todo.md
+.idea/
+*.iml
+*.ipynb_checkpoints/
+
+
+Docs/task/todo.md
+Docs/task/completed.md
+
+

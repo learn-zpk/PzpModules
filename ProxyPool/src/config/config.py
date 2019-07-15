@@ -26,4 +26,3 @@ mongo_config = {
     "database": os.getenv('mongo_database', 'ai-platform'),
     "authentication_db": os.getenv('mongo_authentication_db', 'ai-platform')
 }
-
