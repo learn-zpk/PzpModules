@@ -29,22 +29,25 @@
 //
 //
 
-class Solution {
-    public int quickCore(int[] nums, int left, int right){
-        int key=nums[left];
-        while(left<right){
-            while(nums[right]>=key && left<right){
+
+/*快速排序*/
+class Solution2 {
+    public int quickCore(int[] nums, int left, int right) {
+        int key = nums[left];
+        while (left < right) {
+            while (nums[right] >= key && left < right) {
                 right--;
             }
-            nums[right]=nums[left];
-            while(nums[left]<=key && left<right){
+            nums[right] = nums[left];
+            while (nums[left] <= key && left < right) {
                 left++;
             }
-            nums[left]=nums[right];
+            nums[left] = nums[right];
         }
-        nums[left]=key;
+        nums[left] = key;
         return left;
     }
+
     public void qucikSortArray(int[] nums, int left, int right) {
         if (left >= right) {
             return;
@@ -56,7 +59,7 @@ class Solution {
     }
 
     public int[] sortArray(int[] nums) {
-        qucikSortArray(nums, 0, nums.length-1);
+        qucikSortArray(nums, 0, nums.length - 1);
         return nums;
     }
 }
