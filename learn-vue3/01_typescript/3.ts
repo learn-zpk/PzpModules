@@ -1,22 +1,26 @@
-// ts：接口
+// ts：类
 (() => {
     interface IPerson {
         firstName: string
         lastName: string
-        sayHi: () => string
     }
 
-    function showFullName(person: IPerson) {
-        return person.firstName + '_' + person.lastName
-    }
+    class Person {
+        firstName: string
+        lastName: string
+        fullName: string
 
-    const person = {
-        firstName: '东方',
-        lastName: '不败',
-        sayHi: (): string => {
-            return "Hi there"
+        constructor(firstName: string, lastname: string) {
+            this.firstName = firstName
+            this.lastName = lastname
+            this.fullName = firstName + '_' + lastname
         }
     }
+
+    function showFullName(person: Person) {
+        return person.fullName
+    }
+
+    const person = new Person('东方', '不败')
     console.log(showFullName(person))
-    console.log(person.sayHi())
 })()
