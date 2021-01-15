@@ -2,7 +2,7 @@
 - 2021-01,一直在用vue2开发系统，之前也学过一些react
 - 重新熟悉下typescript，顺带学习下vue3，看看后续会不会用得上
 - 基于视频`https://www.bilibili.com/video/BV1CK411u75G?from=search&seid=11484609495152978102`
-- to:https://www.bilibili.com/video/BV1CK411u75G?p=15
+
 ## learn-ml
 - 2020-08，用于写个评中级职称的省刊小论文，之前读研时的科研底子已经丢完了
 - 使用sklearn库学习了解机器学习基础，基于视频`https://www.bilibili.com/video/BV1nt411r7tj?from=search&seid=5594475239138120532`
@@ -22,7 +22,7 @@
 ## learn-django
 - 2020-03, 单位领导要求使用drf来开发内部的运维管理系统，领导喜欢什么就学什么了
 - 基于`https://docs.djangoproject.com/zh-hans/2.0/`文档学习
-- 以前使用flask+mongodb开发后端，最终选择了element-ui+drf+mysql完成了某管理平台开发
+- 以前使用flask+mongodb只开发后端，最终选择了element-ui+drf+mysql完成了两三个项目的开发
 
 ## learn-k8s
 - 2019-01，利用一个java项目学习/分享了K8S的入门使用

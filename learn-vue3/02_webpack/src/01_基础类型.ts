@@ -40,4 +40,47 @@
 
     let color: Color = Color.green;
     console.log(color)
+
+    // any: 当一个数组中存储多个数据，个数不确定、类型不确定可以用到
+    let any1: any = 100;
+    console.log(any1)
+    any1 = 'any'
+    console.log(any1)
+
+    let arrAny: any[] = [100, '1131', true]
+
+    // void: 函数声明的时候在函数后面用:void
+    function showMsg(): void {
+        console.log('测试void')
+    }
+
+    console.log(showMsg())
+
+    // object类型
+    function getObj(obj: object): object {
+        console.log(obj)
+        return {
+            name: 'zzz',
+            age: 222
+        }
+    }
+
+    console.log(getObj({'aaa': 122}))
+
+    // 联合类型: |
+    // 类型断言: <类型>以及as 类型，告知编译器不要检测类型
+    function getStringLength(str: number | string): number {
+        if ((str as string).length) {
+            return (str as string).length
+        } else {
+            return str.toString().length
+        }
+        // if ((<string>str).length) {
+        //     return (<string>str).length
+        // } else {
+        //     return str.toString().length
+        // }
+    }
+
+    console.log(getStringLength(123))
 })()
