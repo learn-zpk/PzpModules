@@ -107,7 +107,20 @@ venv.bak/
 *.ipynb_checkpoints/
 
 
-Docs/task/todo.md
-Docs/task/completed.md
+.DS_Store
+*/node_modules/
+*/npm-debug.log*
+*/yarn-debug.log*
+*/yarn-error.log*
+*/package-lock.json
+*/yarn.lock
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
 

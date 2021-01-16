@@ -1,7 +1,7 @@
 ## learn-vue3
 - 2021-01,一直在用vue2开发系统，之前也学过一些react
 - 重新熟悉下typescript，顺带学习下vue3，看看后续会不会用得上
-- 基于视频`https://www.bilibili.com/video/BV1CK411u75G?from=search&seid=11484609495152978102`
+- 基于视频`https://www.bilibili.com/video/BV1ra4y1H7ih`
 
 ## learn-ml
 - 2020-08，用于写个评中级职称的省刊小论文，之前读研时的科研底子已经丢完了
